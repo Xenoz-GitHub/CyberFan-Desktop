@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberFan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fan">
+
+  <!-- soft neon light spill (circular, blends into wallpaper) -->
+  <div class="light-spill"></div>
+
+  <!-- dark plastic housing disc behind the blades -->
+  <div class="disc"></div>
+
+  <!-- static motion-smear ghost of the blades (sells the spin speed) -->
+  <svg class="smear" viewBox="0 0 360 360" aria-hidden="true">
+    <defs>
+      <linearGradient id="bladeFillS" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0.35">
+        <stop offset="0%" stop-color="#46546b"/>
+        <stop offset="35%" stop-color="#28323f"/>
+        <stop offset="70%" stop-color="#161d28"/>
+        <stop offset="100%" stop-color="#0b0f16"/>
+      </linearGradient>
+    </defs>
+    <g transform="rotate(7 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(58.43 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(109.86 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(161.29 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(212.71 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(264.14 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+    <g transform="rotate(315.57 180 180)">
+      <path d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z" fill="url(#bladeFillS)"/>
+    </g>
+  </svg>
+
+  <!-- the spinning 7-blade assembly -->
+  <svg class="blades" viewBox="0 0 360 360" aria-hidden="true">
+    <defs>
+      <linearGradient id="bladeFill" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="0.35">
+        <stop offset="0%" stop-color="#46546b"/>
+        <stop offset="35%" stop-color="#28323f"/>
+        <stop offset="70%" stop-color="#161d28"/>
+        <stop offset="100%" stop-color="#0b0f16"/>
+      </linearGradient>
+      <linearGradient id="edgeGlow" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0.55" y2="0.9">
+        <stop offset="0%" stop-color="#8cc8ff" stop-opacity="0"/>
+        <stop offset="45%" stop-color="#96d7ff" stop-opacity="0.5"/>
+        <stop offset="100%" stop-color="#7a50ff" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g transform="rotate(0 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(51.43 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(102.86 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(154.29 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(205.71 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(257.14 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+    <g transform="rotate(308.57 180 180)">
+      <path class="blade-shape" d="M147 109.3 C130 100, 105 92, 89.4 64.1 Q160 36, 249 50.2 C252 72, 240 92, 196.6 101.7 A80 80 0 0 0 147 109.3 Z"/>
+      <path class="blade-edge" d="M147 109.3 C130 100, 105 92, 89.4 64.1"/>
+      <path class="blade-trail" d="M249 50.2 C252 72, 240 92, 196.6 101.7"/>
+    </g>
+  </svg>
+
+  <!-- subtle static inner rings on the fan body -->
+  <div class="ring ring-a"></div>
+  <div class="ring ring-b"></div>
+
+  <!-- center hub with integrated clock -->
+  <div class="hub">
+    <div class="hub-accent"></div>
+    <div class="clock">
+      <div class="time" id="time">--:--</div>
+      <div class="day" id="day">-------</div>
+      <div class="date" id="date">--.--.----</div>
+    </div>
+  </div>
+
+  <!-- RGB LED band + soft neon glow -->
+  <div class="rgb-band"></div>
+  <div class="rgb-glow"></div>
+
+  <!-- outer plastic frame ring -->
+  <div class="frame"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

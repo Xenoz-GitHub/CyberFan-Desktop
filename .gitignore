@@ -1,0 +1,9 @@
+# Build output
+dist/
+
+# Downloaded third-party plugin binaries (fetched by build.ps1 / CI)
+Plugins/
+
+# Python
+__pycache__/
+*.pyc
