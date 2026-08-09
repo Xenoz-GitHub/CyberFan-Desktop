@@ -128,20 +128,20 @@ After editing a file, right-click the skin and choose **Reload Page** (for HTML/
 
 <hr>
 
-## <span style="color:#4dffe0">Recommended Companion Tools</span>
+## <span style="color:#4d8dff">Recommended Companion Tools</span>
 
 CyberFan works beautifully on its own, but these two additions complete the setup:
 
-- <span style="color:#4dffe0">**Fences by Stardock**</span> - [https://www.stardock.com/products/fences/](https://www.stardock.com/products/fences/) - organizes your desktop icons into clean, collapsible regions. CyberFan stays on the desktop as a decorative centerpiece while Fences keeps your shortcuts tidy around it.
+- <span style="color:#4d8dff">**Fences by Stardock**</span> - [https://www.stardock.com/products/fences/](https://www.stardock.com/products/fences/) - organizes your desktop icons into clean, collapsible regions. CyberFan stays on the desktop as a decorative centerpiece while Fences keeps your shortcuts tidy around it.
 
-- <span style="color:#4dffe0">**Windows Game Bar (Win + G)**</span> - a built-in Windows overlay that shows live CPU usage, FPS, RAM, GPU and network performance while you play or work. Since CyberFan does not display system stats, use the Game Bar (press **Win + G**) whenever you want real-time hardware monitoring - no extra software required.
+- <span style="color:#4d8dff">**Windows Game Bar (Win + G)**</span> - a built-in Windows overlay that shows live CPU usage, FPS, RAM, GPU and network performance while you play or work. Since CyberFan does not display system stats, use the Game Bar (press **Win + G**) whenever you want real-time hardware monitoring - no extra software required.
 
 <hr>
 
 ## <span style="color:#4d8dff">Project Structure</span>
 
 ```
-RAINMETER/
+CyberFan-Desktop/
 ├── README.md                        This documentation
 ├── RMSKIN.ini                       Installer manifest (name, version, requirements)
 ├── build.ps1                        One-command .rmskin package builder
@@ -171,6 +171,8 @@ The `.rmskin` installer is generated automatically by GitHub Actions whenever yo
 
 End users then install everything with a single double-click.
 
+<hr>
+
 ## <span style="color:#b04dff">Troubleshooting</span>
 
 | Problem | Solution |
@@ -186,6 +188,8 @@ End users then install everything with a single double-click.
 ## <span style="color:#ff4dd2">License</span>
 
 This skin is free to use, modify and share. The WebView2 plugin is a third-party component and remains property of its respective author - see the [NSTechBytes WebView2 repository](https://github.com/NSTechBytes/WebView2) for its license.
+
+<hr>
 
 ## <span style="color:#ff4dd2">Author</span>
 
